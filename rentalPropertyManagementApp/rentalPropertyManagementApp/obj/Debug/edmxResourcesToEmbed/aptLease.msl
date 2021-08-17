@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="cis3325_studentsModelStoreContainer" CdmEntityContainer="cis3325_studentsEntities">
+    <EntitySetMapping Name="ApartmentLeases">
+      <EntityTypeMapping TypeName="cis3325_studentsModel.ApartmentLease">
+        <MappingFragment StoreEntitySet="ApartmentLease">
+          <ScalarProperty Name="LeaseNumber" ColumnName="LeaseNumber" />
+          <ScalarProperty Name="ApartmentNumber" ColumnName="ApartmentNumber" />
+          <ScalarProperty Name="ApartmentName" ColumnName="ApartmentName" />
+          <ScalarProperty Name="MonthlyRent" ColumnName="MonthlyRent" />
+          <ScalarProperty Name="Months" ColumnName="Months" />
+          <ScalarProperty Name="TenantId" ColumnName="TenantId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

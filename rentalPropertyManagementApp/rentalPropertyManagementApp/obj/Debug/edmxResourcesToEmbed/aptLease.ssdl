@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cis3325_studentsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ApartmentLease">
+    <Key>
+      <PropertyRef Name="LeaseNumber" />
+    </Key>
+    <Property Name="LeaseNumber" Type="int" Nullable="false" />
+    <Property Name="ApartmentNumber" Type="int" Nullable="false" />
+    <Property Name="ApartmentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MonthlyRent" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Months" Type="int" Nullable="false" />
+    <Property Name="TenantId" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="cis3325_studentsModelStoreContainer">
+    <EntitySet Name="ApartmentLease" EntityType="Self.ApartmentLease" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
